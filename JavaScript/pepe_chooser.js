@@ -19,7 +19,7 @@ function chooserFunc() {
             
         }
     
-        var timeoutId = setTimeout(textFadeOut, 2300);
+        var timeoutId = setTimeout(textFadeOut, 3000);
     }
     
     function noiseFunc() {
@@ -31,6 +31,7 @@ function chooserFunc() {
             document.getElementById("noise").style.backgroundImage = "url(images/noise_30.png)"
         }
     }
+    
         
 
     if (document.getElementById("pepe_select").options[0].selected == true) {
