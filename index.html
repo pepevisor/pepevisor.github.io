@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PEPEVISOR</title>
+    <link rel="shortcut icon" type="image/png" href="pepe_ico.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="JavaScript/menu.js">Script menu.js is not available</script>
+    <script src="JavaScript/popup_bg.js">Script popup_big.js is not available</script>
+    <script src="JavaScript/pepe_chooser.js">Script pepe_chooser.js is not available</script>
+</head>
+
+<body>
+   
+    
+    <!-- #menu -->
+
+    <div id="menu-wrapper">
+
+        <div id="menu_button_container">
+
+            <button id="menu_button" onclick="menu_func()">меню →</button>
+
+        </div>
+
+        <div id="menu_list">
+
+            <button id="menu_item" class="background" onclick="callFromButtonFunc()">Изменить фон</button>
+
+            <div id="menu_item" class="rare_pepe">Rare Pepe</div> 
+
+            <div id="menu_item" class="about_pepe">About Pepe</div>
+
+            <div id="menu_item" class="error"> Нашли ошибку?</div>  
+
+            <div id="about">
+            <span id="about_string_1">PEPEVISOR</span></br>
+            <span id="about_string_2">Версия: 4.0.1</span></br>
+            <span id="about_string_3">Pepe Inc © 2016</span></br>
+            </div>
+
+        </div>  
+
+        <div id="menu-wrapper-shadow"></div>
+
+    </div>
+     
+    <!-- #menu --> 
+
+      
+    <!-- #tv --> 
+       
+    <div id="bg_wrapper">
+
+        <div id="container">
+
+            <div id="img_tv"></div>
+
+            <div id="picture">
+
+                <div id="noise">
+
+                    <div id="sign">
+
+                        PEPEVISOR приветствует вас! переключите канал слева →
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div id="js_action">
+
+                <select name="pepe" id="pepe_select">
+                   
+                    <option value="choose">Выбери Pepe</option>
+                    <option value="sad">Грустный</option>
+                    <option value="recursion">Рекурсивный</option>
+                    <option value="dreamy">Мечтательный</option>
+                    <option value="dancing">Танцующий</option>
+                    <option value="cosmic">Космический</option>
+                    <option value="photogenic">Фотогеничный</option>
+                    <option value="thoughtful">Задумчивый</option>
+                    <option value="dudec">Pepe Дудец</option>
+                    <option value="kanye">Kanye West</option>
+                    <option value="!@#$%^&*()">!@#$%^&*()</option>
+                    
+                </select>
+
+                </br>
+
+                <button id="chooser" onclick="chooserFunc()">Нажми на эту </br> большую </br> кнопку</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- #tv --> 
+    
+    
+    <!-- #popup --> 
+    
+    <div id="pop-container"></div>
+
+        <div id="popup">
+
+            <div id="nav-bar">
+
+                <div id="header">Изменить задний фон</div>
+
+                <div id="buttons">
+
+                    <button class="pop-buttons" id="close"  onclick="buttonCloseFunc()">Закрыть</button>
+
+                    <button class="pop-buttons" id="roll-deploy" onclick="buttonRollDeployFunc()">Свернуть</button>
+
+                </div>
+
+            </div>
+
+            <div id="text">
+              
+               <div class="bg_block" id="bg_block_1"> <button id="bg_button" onclick="backgroundFunc1()">  <p id="bg_block_text"> <i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_2"> <button id="bg_button" onclick="backgroundFunc2()"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_3"> <button id="bg_button" onclick="backgroundFunc3()"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_4"> <button id="bg_button" onclick="backgroundFunc4()"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_5"> <button id="bg_button" onclick="backgroundFunc5()"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_6"> <button id="bg_button"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_6"> <button id="bg_button"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_6"> <button id="bg_button"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_6"> <button id="bg_button"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_6"> <button id="bg_button"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_6"> <button id="bg_button"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               <div class="bg_block" id="bg_block_6"> <button id="bg_button"> <p id="bg_block_text"><i>Выбрать фон</i></p> </button> </div>
+               
+            </div>
+            
+           <div id="bg_level"><span id="bg_level_s_1">Уровень непрозрачности фона</span> <span id="bg_level_s_2"><button id="bg_level_button" class="bg_level_button_1">1</button> <button id="bg_level_button"  class="bg_level_button_2">2</button> <button id="bg_level_button"  class="bg_level_button_3">3</button> <button id="bg_level_button"  class="bg_level_button_4">4</button></span></div>
+
+    </div>
+
+   <!-- #popup --> 
+   
+    
+</body>
+
+</html>
