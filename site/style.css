@@ -247,17 +247,45 @@ hr {
 }
 
 .news {
+    z-index: 1;
+    position: relative;
     transition: 200ms linear;
     width: 358px;
     height: 500px;
     float: left;
     //margin: 0 0 25px 30px;
     margin: 15px 15px;
-    border-radius: 2px;
+    border-radius: 1px;
     box-shadow: 0 5px 35px rgba(0,0,0,0.3); 
-    overflow: hidden;
-    border: 1px solid rgba(256,256,256,0.1);
+    //overflow: hidden;
+    border: 1px solid #9E9E9E;
     background: #BDBDBD;
+}
+
+.news::before {
+    transition: 130ms linear;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 340px;
+    z-index: 2;
+    position: absolute;
+    bottom: 150;
+    left: 0;
+    content: "/ potfolio /";
+    display: block;
+    height: 350px;
+    width: 100%;
+    background: rgba(109, 84, 65, 0.2);
+    color: #E0E0E0;
+    border-bottom: 1px solid rgba(256,256,256,0.7);
+}
+
+.news:hover::before {
+    color: #FAFAFA;
+    line-height: 34px;
+    transition: 200ms linear;
+    height: 35px;
+    background: rgba(109, 84, 65, 0.5);
 }
 
 .news:hover  {
@@ -267,6 +295,7 @@ hr {
 }
 
 .news-picture {
+    overflow: hidden;
     height: 350px;
     background: #424242;
 }
