@@ -9,6 +9,10 @@ body {
     background: url(head_3_1.jpg) top fixed;
 }
 
+u {
+    margin-top: 66px;
+}
+
 #top {
     margin-top: -50px;
     transition: 50ms linear;
@@ -88,21 +92,21 @@ body {
 }
 
 #nav > ul > li:first-child {
-    //color: #FAFAFA;
+    color: #EEEEEE;
     //color: #2a2b3e;
     //color: #b6bbfd;
-    color: #babffe;
-    //outline: 2px solid #FAFAFA;
+    //color: #babffe;
+    outline: 2px solid #BDBDBD;
     //outline: 2px solid #7a7fc6;
-    outline: 2px solid #858be2;
+    //outline: 2px solid #858be2;
 }
 
 #nav > ul > li:hover {
     transition: 130ms linear;
-    //color: #FAFAFA;
-    //outline: 2px solid #FAFAFA;
-    color: #b6bbfd;
-    outline: 2px solid #7a7fc6;
+    color: #EEEEEE;
+    outline: 2px solid #BDBDBD;
+    //color: #b6bbfd;
+    //outline: 2px solid #7a7fc6;
 }
 
 #author {
@@ -111,11 +115,16 @@ body {
     text-align: center;
     //padding-top: 120px;
     padding-top: 90px;
+    padding-bottom: 45px;
     //letter-spacing: 4px;
     letter-spacing: 15px;
 }
 
 #author_desc {
+    width: 400px;
+    margin: auto;
+    //background: #000;
+    cursor: pointer;
     color: #E0E0E0;
     font-size: 19px;
     text-align: center;
@@ -123,7 +132,7 @@ body {
     letter-spacing: 7px;
     //letter-spacing: 1px;
     //padding-top: 25px;
-    padding-top: 50px;
+    padding-top: 5px;
 }
 
 #author::after { 
@@ -140,10 +149,12 @@ body {
 }
 
 #container-fluid {
+    min-height: 1300px;
     //box-shadow: 0 0 20px rgba(0,0,0,0.25); /*important*/
     //box-shadow: 0 0 50px rgba(0,0,0,0.15); /*important*/
-    box-shadow: 0 0 90px 10px rgba(0,0,0,0.4); /*important*/
-    border-top: 1px solid #BDBDBD;
+    //box-shadow: 0 0 90px 10px rgba(0,0,0,0.4); /*important*/
+    border-top: 1px solid #9E9E9E;
+    border-bottom: 1px solid #9E9E9E;
     //background: #EEEEEE;
     //background: #2b2a2a;
     //background: #191717;
@@ -157,7 +168,7 @@ body {
     
     //background: #181922;
     //background: #191923;
-    background: #242431;
+    //background: #242431;
     background: #1a1923;
     
     //background: rgba(24, 25, 34, 0.9);
@@ -254,44 +265,56 @@ hr {
     height: 500px;
     float: left;
     //margin: 0 0 25px 30px;
-    margin: 15px 15px;
+    margin: 18px 15px;
     border-radius: 1px;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.3); 
-    //overflow: hidden;
+    //box-shadow: 0 5px 35px rgba(0,0,0,0.3); 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.7); 
+    overflow: hidden;
     border: 1px solid #9E9E9E;
-    background: #BDBDBD;
+    //background: #BDBDBD;
+    background: #d8d8d7;
 }
 
 .news::before {
     transition: 130ms linear;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    line-height: 340px;
+    line-height: 39px;
     z-index: 2;
     position: absolute;
-    bottom: 150;
-    left: 0;
+    top: 145;
+    left: 120px;
+    font-size: 18px;
     content: "/ potfolio /";
     display: block;
-    height: 350px;
-    width: 100%;
-    background: rgba(109, 84, 65, 0.2);
+    height: 40px;
+    width: 120px;
+    //background: rgba(109, 84, 65, 0.5);
+    background: rgba(31, 29, 29, 0.5);
     color: #E0E0E0;
-    border-bottom: 1px solid rgba(256,256,256,0.7);
+    border: 1px solid rgba(256,256,256,0.5);
 }
 
 .news:hover::before {
     color: #FAFAFA;
-    line-height: 34px;
+    line-height: 39px;
     transition: 200ms linear;
-    height: 35px;
-    background: rgba(109, 84, 65, 0.5);
+    top: 308px;
+    width: 100%;
+    left: 0;
+    border: 1px solid rgba(31, 29, 29, 0.05);
+    //background: rgba(109, 84, 65, 0.5);
+    background: rgba(31, 29, 29, 0.6);
+    //background: rgba(109, 84, 65, 0.7);
 }
 
 .news:hover  {
+    cursor: pointer;
+    border: 1px solid #E0E0E0;
     transition: 130ms linear;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-    background: #E0E0E0;
+    //box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 30px 10px rgba(0,0,0,0.5); 
+    background: #e5e5e2;
 }
 
 .news-picture {
@@ -304,9 +327,11 @@ hr {
     height: 120px;
     padding: 9px 8px 7px 8px;
     font-family: 'Roboto', sans-serif;
-    color: #424242;
+    color: #616161;
     font-size: 18px;
     overflow: hidden;
+    line-height: 22px;
+    text-align: center;
 }
 
 .pic-container {
@@ -314,10 +339,86 @@ hr {
     position: absolute;
     height: 350px;
     width: 358px;
-    background: rgba(31, 29, 29, 0.3);
+    background: rgba(31, 29, 29, 0.4);
 }
 
 .news:hover .pic-container {
     transition: 130ms linear;
     background: rgba(31, 29, 29, 0.1);
+}
+
+.text-b {
+    font-size: 19px;
+    color: #424242;
+    display: block;
+    margin: 4px 0 10px 0;
+}
+
+#pagination {
+    padding: 30px 0 10px 0;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    letter-spacing: 2px;
+    color: #E0E0E0;
+    display: block;
+    margin: 4px 0 10px 0;
+}
+
+.p-button {
+    transition: 200ms linear;
+    border: 2px solid #9E9E9E;
+    padding: 0 6px;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.p-button:hover {
+    transition: 130ms linear;
+    background: #E0E0E0;
+    border: 2px solid #E0E0E0;
+    color: #1a1923;
+    cursor: pointer;
+    
+}
+
+.pag-numb {
+    border-top: 2px solid #9E9E9E;
+    border-bottom: 2px solid #9E9E9E;
+    padding: 0 13px;
+    font-size: 20px;
+}
+
+#footer-container {
+    //background: #2c2b3b;
+    //background: #2a2937;
+    background: #2a2834;
+    height: 180px;
+    width: 100%;
+}
+
+#footer {
+    padding: 20px 0;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #E0E0E0;
+    margin: auto;
+    height: 140px;
+    width: 1170px;
+}
+
+.footer-important {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.footer-important:hover {
+    border-bottom: 1px solid #F5F5F5;
+    color: #F5F5F5;
+    cursor: pointer;
 }
